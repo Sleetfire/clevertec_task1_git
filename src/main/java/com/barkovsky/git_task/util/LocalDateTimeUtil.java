@@ -7,6 +7,10 @@ import java.util.TimeZone;
 
 public class LocalDateTimeUtil {
 
+    private LocalDateTimeUtil() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static long convertLocalDateTimeToLong(LocalDateTime localDateTime) {
         return localDateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
     }
