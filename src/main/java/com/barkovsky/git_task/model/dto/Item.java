@@ -27,7 +27,7 @@ public class Item {
     @JsonProperty("title")
     private String title;
 
-    @JsonProperty("title")
+    @JsonProperty("description")
     private String description;
 
     public Item(UUID uuid, LocalDateTime dtCreate, LocalDateTime dtUpdate, String title, String description) {
